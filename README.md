@@ -1,5 +1,5 @@
 # pre-commit
-###A simple git `pre-commit` hook hacks with `commit-msg` hook
+### A simple git `pre-commit` hook hacks with `commit-msg` hook
 
  * It prompts accidental commits on "master" branch.
  * And allow/disallow commits on 'master' branch from based on user input. (terminal only).
