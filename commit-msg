@@ -1,0 +1,18 @@
+#!/bin/bash
+
+
+branch="$(git rev-parse --abbrev-ref HEAD)"
+MSG="$(cat $1)"
+
+if [ "$branch" = "master" ]; then
+	
+  	read -p "Do you want to commit on master (y) " REPLY  < /dev/tty
+
+  	if [ "$REPLY" = "y" ]; then
+  		exit 0
+  		eval "git commit -m '$MSG'"
+	else
+	    echo "not committed to master"
+	fi
+  exit 1
+fi
