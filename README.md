@@ -1,5 +1,11 @@
-# commit-msg
+# pre-commit
+###A simple git `pre-commit` hook hacks with `commit-msg` hook
 
-A simple hook for Git that prompts accidental commits on "master" branch. __
-Also allow continue commit on 'master' from terminal based on user input.
+ * It prompts accidental commits on "master" branch.
+ * And allow/disallow commits on 'master' branch from based on user input. (terminal only).
+
+## Install on Windows
+1. download `install.sh` on your project folder.
+2. open 'git bash' and run `./install.sh`
+
 
